@@ -66,6 +66,10 @@ p {
     cursor: pointer;
 }
 
+.menu-icon {
+    display: none;
+}
+
 /* **** for all section **** */
 .section {
     width: 80vw;
