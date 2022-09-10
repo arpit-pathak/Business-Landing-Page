@@ -76,7 +76,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 88vh;
+    padding: 2rem 0;
     margin: 0 auto;
 }
 
@@ -93,7 +93,6 @@ p {
     align-items: flex-start;
     width: 52%;
     padding: 0 10px;
-    height: 100%;
     color: #fff;
 
 }
@@ -215,7 +214,8 @@ p {
     font-size: 4rem;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding: 0 25rem;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .img-section {
@@ -223,6 +223,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
 }
 
 .img-content {
@@ -243,8 +244,11 @@ p {
 }
 
 .section-img {
-    display: block;
-    width: 500px;
+    width: 50%;
+}
+
+.section-img img {
+    width: 100%;
 }
 
 /* ***************** Team section ***************** */
@@ -301,19 +305,19 @@ p {
 
 /* ***************** footer ***************** */
 footer {
-    padding: 0 8.8rem;
     background-color: #10181D;
     color: #fff;
-    height: 70vh;
-    padding-top: 2rem; 
+    padding: 2rem 8.8rem;
+   
 }
 
 .upper-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
+
 .social-media{
     display: flex;
     flex-direction: row;
@@ -347,4 +351,246 @@ footer {
     flex-direction: column;
     gap: 1.2rem;
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .section {
+        width: 85vw;
+    }
+
+    .navbar {
+        padding: 0 4rem;
+    }
+
+    .nav-items {
+        gap: 2rem;
+    }
+
+    .nav-btn {
+        margin-left: 2rem;
+    }
+
+    .hero-img {
+        width: 25rem;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .email-input {
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .email-btn {
+        padding: 1rem 2.5rem;
+    }
+
+    .video-section h2 {
+        width: 80%;
+    }
+
+    .sections-heading {
+        width: 70%;
+        font-size: 3.5rem;
+    }
+
+    footer {
+        padding: 2rem 6rem;
+    }
+}
+
+
+@media screen and (max-width:1050px) {
+
+    .navbar {
+        padding: 0 3rem;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .email-btn {
+        padding: 1rem 3rem;
+    }
+
+    .email-input {
+        width: 60%;
+        padding: 10px 40px 10px 10px;
+    }
+
+    .video-section {
+        margin: 4rem auto;
+    }
+
+    .video-section h2 {
+        width: 90%;
+    }
+
+    .sections-heading {
+        width: 80%;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: 2rem 4rem;
+    }
+
+}
+
+@media screen and (max-width:840px) {
+
+    .navbar {
+        height: 12vh;
+        padding: 0 2rem;
+    }
+
+    .video-section {
+        margin: 3rem auto;
+    }
+
+    .video-section h2 {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .number-container {
+        justify-content: space-evenly;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .number div {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .img-section {
+        flex-direction: column;
+    }
+
+    .section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .img-content,
+    .section-img {
+        width: 100%;
+    }
+
+    .sections-heading {
+        width: 90%;
+        font-size: 3.5rem;
+    }
+
+    .team-header {
+        flex-direction: column;
+    }
+
+    .team-header p {
+        width: 100%;
+    }
+
+    .team-header h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lower-footer,
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .section {
+        width: 90vw;
+    }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .email-box {
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .email-img {
+        display: none;
+    }
+
+    .email-input {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .email-btn {
+        width: 100%;
+        padding: 10px 3rem;
+    }
+
+    .sections-heading {
+        font-size: 3rem;
+    }
+
+    .section-btn {
+        align-self: center;
+    }
+
+    .video-icon {
+        left: 40%;
+    }
+
+    .team-cards {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1rem 4rem;
+    }
+
+    .upper-footer {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
 }
